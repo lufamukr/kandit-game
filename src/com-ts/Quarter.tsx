@@ -11,7 +11,10 @@ export const Quarter = (props:QuarterType) => {
 
   let [currPoint, setCurrPoint] = useState('')
   const onChangeHandler = (e:ChangeEvent<HTMLInputElement>) => {
-    setCurrPoint(e.currentTarget.value)
+    let val = e.currentTarget.value;
+    if(val.length <= 2) {
+      setCurrPoint(val)
+    }
   }
 
   const whiteInput = (val:string) => {

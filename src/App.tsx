@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Quarter } from "./com-ts/Quarter";
 import { state } from "./state";
+import { Archive } from "./com-ts/archive/Archive";
 
 let App = () => {
 
@@ -24,6 +25,13 @@ let App = () => {
       <Quarter state={changeState[1]} onClickFunc={onClickFunc}/>
       <Quarter state={changeState[2]} onClickFunc={onClickFunc}/>
       <Quarter state={changeState[3]} onClickFunc={onClickFunc}/>
+
+      <div className='coverBtn'>
+        <button className={'btn'}>{'\u21ba'}</button>
+        <button className={'btn'}>{'\u270e'}</button>
+      </div>
+
+      <Archive />
     </div>
   );
 };

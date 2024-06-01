@@ -5,4 +5,20 @@
   text-align: center;
 }
 
+.coverBtn {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.btn {
+  width: 80px;
+  font-size: 20px;
+  line-height: 1.1;
+  background-color: teal;
+  color: white;
+}
+
+.btn + .btn {
+  margin-left: 20px;
+}
 
